@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "873308338031",
+    "firebase_url": "https://chattest-63668.firebaseio.com",
+    "project_id": "chattest-63668",
+    "storage_bucket": "chattest-63668.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873308338031:android:082c289aeea2cdbe",
+        "android_client_info": {
+          "package_name": "jp.co.aiphone.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873308338031-nngsvlru4b131eh1c8t2fbtcl1jk0pa5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGpvycKPSYAb2PlbWHkEYN8B4RD-MEoKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873308338031-nngsvlru4b131eh1c8t2fbtcl1jk0pa5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
