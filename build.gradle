@@ -21,8 +21,7 @@ allprojects {
         google()
         jcenter()
         maven {
-            //url 'https://maven.google.com/'
-            url 'https://dl.bintray.com/android/android-tools/'
+            url 'https://maven.google.com/'
         }
     }
 }
