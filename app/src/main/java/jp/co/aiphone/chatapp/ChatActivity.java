@@ -1,7 +1,6 @@
 package jp.co.aiphone.chatapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +10,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import org.jetbrains.annotations.NotNull;
 
 import jp.co.aiphone.chatapp.chatfunc.ChatFunc;
 import jp.co.aiphone.chatapp.chatfunc.IChatListener;
@@ -78,7 +79,7 @@ public class ChatActivity extends AppCompatActivity implements IChatListener {
     }
 
     @Override
-    public void update(final String sMessage) {
+    public void update(@NotNull final String sMessage) {
         /* スレッドにメッセージを表示 */
         m_textThread.append(sMessage);
         /* 画面を自動スクロール */
