@@ -48,6 +48,12 @@ dependencies {
     // 参考 https://qiita.com/ymmtyuhei/items/2cb79031e20e1dcff6fc
     testImplementation 'com.nhaarman.mockitokotlin2:mockito-kotlin:2.0.0-RC1'
     testImplementation 'org.mockito:mockito-android:2.22.0'
+
+    androidTestImplementation 'androidx.test:rules:1.1.0'
+    // Optional -- Hamcrest library
+    androidTestImplementation 'org.hamcrest:hamcrest-library:1.3'
+    // Optional -- UI testing with Espresso
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
 }
 
 apply plugin: 'com.google.gms.google-services'  // Google Play services Gradle plugin
@@ -68,7 +74,7 @@ task ktlint(type: JavaExec, group: "verification") {
     classpath = configurations.ktlint
     main = "com.pinterest.ktlint.Main"
     args "--reporter=checkstyle" , "src/**/*.kt"
-    ignoreExitValue false
+    ignoreExitValue true
     // to generate report in checkstyle format prepend following args:
     // "--reporter=plain", "--reporter=checkstyle,output=${buildDir}/ktlint.xml"
     // see https://github.com/pinterest/ktlint#usage for more
