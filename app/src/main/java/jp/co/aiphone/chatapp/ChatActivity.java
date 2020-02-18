@@ -93,6 +93,6 @@ public class ChatActivity extends AppCompatActivity implements IChatListener {
 
     @Override
     public void notify(boolean isLoginSuccess) {
-        /*　本クラスでは何もしない　*/
+        /*　本クラスでは何もしないです　*/
     }
 }
