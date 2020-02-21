@@ -8,6 +8,7 @@ import jp.co.aiphone.chatapp.chatfunc.IChatListener
 import kotlinx.android.synthetic.main.activity_main.*
 import org.hamcrest.core.Is
 import org.junit.Assert
+import org.junit.Ignore
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.Robolectric
@@ -73,6 +74,7 @@ class ChatFuncTestByRobolectric {
     }
 
     // 画面を使ってログインを確認する
+    @Ignore("今動かす必要なし")
     @Test
     fun loginTextByActivity() {
         val activity = Robolectric.setupActivity(MainActivity::class.java)
