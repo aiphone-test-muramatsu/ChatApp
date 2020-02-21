@@ -24,7 +24,7 @@ fail "close PR"
 # マークダウンも使える
 markdown("# markdown")
 markdown("## markdown")
-markdown("### markdown"
+markdown("### markdown")
 
 # プルリクが編集中
 warn("このプルリクが編集中のようです。") if github.pr_title.include? "[WIP]"
